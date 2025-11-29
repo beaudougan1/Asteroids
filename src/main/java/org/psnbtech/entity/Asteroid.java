@@ -12,7 +12,7 @@ import org.psnbtech.util.Vector2;
  * @author Brendan Jones
  *
  */
-public class Asteroid extends Entity {
+/*public class Asteroid extends Entity {
 	
 	/**
 	 * The minimum speed at which the asteroid can rotate.
