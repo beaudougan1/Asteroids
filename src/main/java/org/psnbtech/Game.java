@@ -155,7 +155,8 @@ public class Game extends JFrame {
 	/**
 	 * Create a new instance of the Game.
 	 */
-	private Game() {
+	//CHANGED TO PUBLIC
+	public Game() {
 		//Initialize the window's basic properties.
 		super("Asteroids");
 		setLayout(new BorderLayout());
