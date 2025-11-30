@@ -8,19 +8,20 @@ import org.junit.jupiter.api.Test;
 import org.psnbtech.entity.Asteroid;
 
 class Tests {
-    //Create random and asteroid object
+    //create random and asteroid object
     Random random = new Random();
     Asteroid test;
+    //setup
     @BeforeEach
     void setUp(){
         //initialize asteroid
         test = new Asteroid(random);
     }
-
+    //build test
     @Test
     void testGameCreation() {
-        //check if Asteroid object exists
-        assertNotNull(test);
+        //check if size in asteroid is not null
+        assertNotNull(test.size);
         
     }
 
