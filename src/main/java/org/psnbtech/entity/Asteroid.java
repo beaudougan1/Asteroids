@@ -67,7 +67,7 @@ public class Asteroid extends Entity {
 	/**
 	 * The Size.
 	 */
-	//CHANGED TO PUBLIC
+	//CHANGED TO PUBLIC FOR TESTING
 	public AsteroidSize size;
 	
 	/**
@@ -82,7 +82,8 @@ public class Asteroid extends Entity {
 	public Asteroid(Random random) {
 		super(calculatePosition(random), calculateVelocity(random), AsteroidSize.Large.radius, AsteroidSize.Large.killValue);
 		this.rotationSpeed = -MIN_ROTATION + (random.nextDouble() * ROTATION_VARIANCE);
-		this.size = AsteroidSize.Large;
+		//will comment this out to test the maven build fail
+		//this.size = AsteroidSize.Large;
 	}
 	
 	/**
