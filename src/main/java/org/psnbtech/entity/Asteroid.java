@@ -83,7 +83,7 @@ public class Asteroid extends Entity {
 		super(calculatePosition(random), calculateVelocity(random), AsteroidSize.Large.radius, AsteroidSize.Large.killValue);
 		this.rotationSpeed = -MIN_ROTATION + (random.nextDouble() * ROTATION_VARIANCE);
 		//will comment this out to test the maven build fail
-		//this.size = AsteroidSize.Large;
+		this.size = AsteroidSize.Large;
 	}
 	
 	/**
